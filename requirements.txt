@@ -1,0 +1,4 @@
+editdistance==0.6.2
+speechbrain==0.5.14
+torch
+torchaudio

@@ -1,0 +1,39 @@
+cmvn_file: ./data/global_cmvn
+decoder: bitransformer
+decoder_conf:
+  attention_heads: 8
+  dropout_rate: 0.1
+  linear_units: 2048
+  num_blocks: 3
+  positional_dropout_rate: 0.1
+  r_num_blocks: 3
+  self_attention_dropout_rate: 0.1
+  src_attention_dropout_rate: 0.1
+encoder: conformer
+encoder_conf:
+  activation_type: swish
+  attention_dropout_rate: 0.1
+  attention_heads: 8
+  causal: true
+  cnn_module_kernel: 15
+  cnn_module_norm: layer_norm
+  dropout_rate: 0.1
+  input_layer: conv2d
+  linear_units: 2048
+  normalize_before: true
+  num_blocks: 12
+  output_size: 512
+  pos_enc_layer_type: rel_pos
+  positional_dropout_rate: 0.1
+  selfattention_layer_type: rel_selfattn
+  use_cnn_module: true
+  use_dynamic_chunk: true
+  use_dynamic_left_chunk: false
+input_dim: 80
+is_json_cmvn: true
+model_conf:
+  ctc_weight: 0.3
+  length_normalized_loss: false
+  lsm_weight: 0.1
+  reverse_weight: 0.3
+output_dim: 5538

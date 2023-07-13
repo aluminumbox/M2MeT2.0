@@ -1,0 +1,6 @@
+data/R8008_M8014.wav filter=lfs diff=lfs merge=lfs -text
+data/R8008_M8014_bf.wav filter=lfs diff=lfs merge=lfs -text
+data/R8008_M8014.pt filter=lfs diff=lfs merge=lfs -text
+data/R8008_M8014_bf.pt filter=lfs diff=lfs merge=lfs -text
+data/ts_asr.pt filter=lfs diff=lfs merge=lfs -text
+data/ts_vad.pt filter=lfs diff=lfs merge=lfs -text
